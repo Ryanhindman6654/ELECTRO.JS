@@ -12,7 +12,7 @@ class Invitations extends Command {
             dirname: __dirname,
             enabled: true,
             guildOnly: true,
-            aliases: [invites],
+            aliases: ["invites"],
             memberPermissions: [],
             botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS", "MANAGE_CHANNELS" ],
             nsfw: false,
