@@ -17,18 +17,18 @@ module.exports = {
 		failureURL: "https://www.atlanta-bot.fr" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	mongoDB: "mongodb://localhost:27017/AtlantaBot", // The URl of the mongodb database
-	prefix: "*", // The default prefix for the bot
+	prefix: "e!", // The default prefix for the bot
 	/* For the embeds (embeded messages) */
 	embed: {
-		color: "#0091fc", // The default color for the embeds
-		footer: "Atlanta | Open Source" // And the default footer for the embeds
+		color: "#ffbf00", // The default color for the embeds
+		footer: "© 2020 ELECTRO, Inc." // And the default footer for the embeds
 	},
 	defaultLanguage: "english", // The default language for the new servers
-	botname: "Atlanta", // The name of the bot
+	botname: "ELECTRO", // The name of the bot
 	/* Bot's owner informations */
 	owner: {
 		id: "XXXXXXXXXXX", // The ID of the bot's owner
-		name: "Androz#2091" // And the name of the bot's owner
+		name: "ADIB HOQUE#2212" // And the name of the bot's owner
 	},
 	/* DBL votes webhook (optional) */
 	votes: {
@@ -144,13 +144,13 @@ module.exports = {
 			// RE: https://i.goopics.net/QdGW0.png
 		},
 		letters: {
-			a: "XXXXXXXXXXX",
+			a: "https://i.goopics.net/RNemO.png",
 			// RE: https://i.goopics.net/RNemO.png
-			w: "XXXXXXXXXXX",
+			w: "https://i.goopics.net/AyKOA.png",
 			// RE: https://i.goopics.net/AyKOA.png
-			r: "XXXXXXXXXXX",
+			r: "https://i.goopics.net/7PKen.png",
 			// RE: https://i.goopics.net/7PKen.png
-			d: "XXXXXXXXXXX"
+			d: "https://i.goopics.net/vAgj7.png"
 			// RE: https://i.goopics.net/vAgj7.png
 		},
 		categories: {
@@ -176,8 +176,8 @@ module.exports = {
 	},
 	/* The others utils links */
 	others: {
-		github: "https://github.com/Androz2091", // Founder's github account
-		donate: "https://patreon.com/Androz2091" // Donate link
+		github: "https://github.com/AdibHoque", // Founder's github account
+		donate: "https://patreon.com/AdibHoque" // Donate link
 	},
 	/* The badges for the badges command */
 	badges: {
