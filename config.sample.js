@@ -53,9 +53,9 @@ module.exports = {
 	},
 	/* The emojis that are required for certain commands */
 	emojis: {
-		error: "XXXXXXXXXXX",
+		error: "https://cdn.discordapp.com/emojis/656772856184832025.gif",
 		// RE: https://cdn.discordapp.com/emojis/565212755804684318.png
-		success: "XXXXXXXXXXX",
+		success: "https://cdn.discordapp.com/emojis/656772759812046851.gif",
 		// RE: https://cdn.discordapp.com/emojis/565212709591973896.png
 		loading: "XXXXXXXXXXX",
 		// RE: https://cdn.discordapp.com/emojis/565214530121105418.gif
