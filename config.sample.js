@@ -49,7 +49,7 @@ module.exports = {
 		// SIMPLE YOUTUBE API: https://console.developers.google.com/
 		simpleYoutube: "XXXXXXXXXXX",
 		// AMETHYSTE: https://api.amethyste.moe
-		amethyste: "XXXXXXXXXXX"
+		amethyste: "bc038730d36a45c68ae7bd698510f32a0265aa983a7bfd3138287021bed377f0cc43dc5f25794d909d52ac331a13769636657ef58f5cf3f36679f9817b5aaff9"
 	},
 	/* The emojis that are required for certain commands */
 	emojis: {
@@ -206,11 +206,11 @@ module.exports = {
 	/* The Bot status */
 	status: [
 		{
-			name: "@Atlanta help on {serversCount} servers",
+			name: "on {serversCount} servers",
 			type: "LISTENING"
 		},
 		{
-			name: "my website : atlanta-bot.fr",
+			name: ".",
 			type: "PLAYING"
 		}
 	],
