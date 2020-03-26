@@ -54,7 +54,7 @@ module.exports = class {
                         ctx = canvas.getContext("2d");
                                             
                         // Background language
-                        let background = await Canvas.loadImage("");
+                        let background = await Canvas.loadImage("https://cdn.glitch.com/5c8b778c-3aaa-4253-b149-acb8c9267727%2Fgreetings_background.png?v=1585235946547");
                         // This uses the canvas dimensions to stretch the image onto the entire canvas
                         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
                         // Draw username
@@ -78,7 +78,7 @@ module.exports = class {
                         ctx.font = "90px Bold";
                         ctx.strokeStyle = "#1d2124";
                         ctx.lineWidth = 15;
-                        ctx.strokeText(title, canvas.width - 620, canvas.height - 330);
+                        ctx.strokeText('WELCOME', canvas.width - 620, canvas.height - 330);
                         var gradient = ctx.createLinearGradient(canvas.width - 780, 0, canvas.width - 30, 0);
                         gradient.addColorStop(0, "#e15500");
                         gradient.addColorStop(1, "#e7b121");
