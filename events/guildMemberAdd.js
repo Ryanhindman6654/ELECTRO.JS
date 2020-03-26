@@ -2,8 +2,8 @@ const Canvas = require("canvas"),
 Discord = require("discord.js");
 const { resolve } = require("path");
 // Register assets fonts
-Canvas.registerFont(resolve("./assets/fonts/theboldfont.ttf"), { family: "Bold" });
-Canvas.registerFont(resolve("./assets/fonts/SketchMatch.ttf"), { family: "SketchMatch" });
+Canvas.registerFont(("https://cdn.glitch.com/5c8b778c-3aaa-4253-b149-acb8c9267727%2Ftheboldfont.ttf?v=1585231410543"), { family: "Bold" });
+Canvas.registerFont(("https://cdn.glitch.com/5c8b778c-3aaa-4253-b149-acb8c9267727%2FSketchMatch.ttf?v=1585231402165"), { family: "SketchMatch" });
 
 const applyText = (canvas, text, defaultFontSize) => {
     const ctx = canvas.getContext("2d");
