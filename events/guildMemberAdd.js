@@ -51,14 +51,10 @@ module.exports = class {
                     .replace(/{membercount}/g, guild.memberCount);
                     if(guildData.plugins.welcome.withImage){
                         let canvas = Canvas.createCanvas(1024, 450),
-                        ctx = canvas.getContext("2d"),
-                        lang = new(require(`../languages/${guildData.language}.js`)),
-                        text = lang.get("WELCOME_IMG_MSG", guild.name),
-                        number = lang.get("WELCOME_IMG_NUMBER", guild.memberCount),
-                        title = lang.get("WELCOME_IMG_TITLE");
-                    
+                        ctx = canvas.getContext("2d");
+                                            
                         // Background language
-                        let background = await Canvas.loadImage("./assets/img/greetings_background.png");
+                        let background = await Canvas.loadImage("");
                         // This uses the canvas dimensions to stretch the image onto the entire canvas
                         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
                         // Draw username
@@ -67,13 +63,13 @@ module.exports = class {
                         ctx.fillText(member.user.username, canvas.width - 660, canvas.height - 248);
                         // Draw server name
                         ctx.font = applyText(canvas, text, 53);
-                        ctx.fillText(text, canvas.width - 690, canvas.height - 65);
+                        ctx.fillText(member.user.guild, canvas.width - 690, canvas.height - 65);
                         // Draw discriminator
                         ctx.font = "40px Bold";
                         ctx.fillText(member.user.discriminator, canvas.width - 623, canvas.height - 178);
                         // Draw number
                         ctx.font = "22px Bold";
-                        ctx.fillText(number, 40, canvas.height - 50);
+                        ctx.fillText(member.user.guild.membercount, 40, canvas.height - 50);
                         // Draw # for discriminator
                         ctx.fillStyle = "#44d14a";
                         ctx.font = "75px SketchMatch";
@@ -87,7 +83,7 @@ module.exports = class {
                         gradient.addColorStop(0, "#e15500");
                         gradient.addColorStop(1, "#e7b121");
                         ctx.fillStyle = gradient;
-                        ctx.fillText(title, canvas.width - 620, canvas.height - 330);
+                        ctx.fillText('WELCOME', canvas.width - 620, canvas.height - 330);
                 
                         // Pick up the pen
                         ctx.beginPath();
