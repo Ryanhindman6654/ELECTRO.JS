@@ -102,11 +102,13 @@ module.exports = class {
                     
                         let avatar = await Canvas.loadImage(member.user.avatarURL);
                         // Move the image downwards vertically and constrain its height to 200, so it"s a square
-                        ctx.drawImage(avatar, 45, 90, 270, 270);
-
-                        let attachment = new Discord.MessageAttachment(canvas.toBuffer(), "welcome-image.png");
-                            channel.send(message, attachment);
-                    } else {
+                        ctx.drawImage(avatar, 45, 90, 270, 270)
+                        msg.channel.send({
+      files: [{
+        attachment: canvas.toBuffer(),
+        name: "coronavirusavpink.png"
+      }]
+    }); 
                         channel.send(message);
                     }
                 }
