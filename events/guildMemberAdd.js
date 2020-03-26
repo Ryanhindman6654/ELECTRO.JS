@@ -100,8 +100,7 @@ module.exports = class {
                         // Clip off the region you drew on
                         ctx.clip();
                     
-                        let options = { format: "png", size: 512 },
-                        avatar = await Canvas.loadImage(member.user.displayAvatarURL(options));
+                        let avatar = await Canvas.loadImage(member.user.avatarURL);
                         // Move the image downwards vertically and constrain its height to 200, so it"s a square
                         ctx.drawImage(avatar, 45, 90, 270, 270);
 
