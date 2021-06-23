@@ -24,7 +24,7 @@ class Invite extends Command {
     async run (message, args, data) {
 
         let inviteLink = message.client.config.inviteURL || `https://discordapp.com/oauth2/authorize?client_id=${this.client.user.id}&scope=bot&permissions=2146958847`;
-        let voteURL = message.client.config.voteURL || `https://discordbots.org/bot/${this.client.user.id}/vote`;
+        //let voteURL = message.client.config.voteURL || `https://discordbots.org/bot/${this.client.user.id}/vote`;
         let supportURL = message.client.config.supportURL || await message.client.functions.supportLink(message.client);
 
         if(args[0] && args[0] === "copy"){
@@ -35,7 +35,7 @@ class Invite extends Command {
             .setAuthor(message.language.get("INVITE_TITLE"))
             .setDescription(message.language.get("INVITE_DESC", data.guild.prefix))
             .addField(message.language.get("INVITE_HEADINGS")[0], inviteLink)
-            .addField(message.language.get("INVITE_HEADINGS")[1], voteURL)
+            //.addField(message.language.get("INVITE_HEADINGS")[1], voteURL)
             .addField(message.language.get("INVITE_HEADINGS")[2], supportURL)
             .setColor(data.config.embed.color)
             .setFooter(data.config.embed.footer);

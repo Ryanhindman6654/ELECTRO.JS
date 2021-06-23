@@ -7,21 +7,20 @@ Here's the list of Atlanta commands. This one contains more than **110 commands*
 **Usage**: The arguments/options that the command takes in parameters  
 **Cooldown**: The time that must elapse between each command so that it can be executed again by the user
 
-### General (25 commands)
+### General (24 commands)
 
 | Name             | Description                                                              | Usage                          | Cooldown  |
 | ---------------- | ------------------------------------------------------------------------ | ------------------------------ | --------- |
-| **api-token**    | Send your token back to use the Atlanta API!                             | apitoken (regenerate)          | 1 seconds |
+| **api-token**    | Send your token back to use the WaterLight API!                          | apitoken (regenerate)          | 1 seconds |
 | **calc**         | A calculator capable of solving complex operations and converting units! | calc [calculation]             | 1 seconds |
 | **fortnite**     | Displays a player's Fortnite stats!                                      | fortnite [psn/xbl/pc] [pseudo] | 1 seconds |
 | **fortniteshop** | Displays the fortnite items shop!                                        | fortniteshop                   | 1 seconds |
-| **github**       | Displays the information from the Atlanta github!                        | github                         | 5 seconds |
 | **hastebin**     | Upload your text on hastebin !                                           | hastebin [text]                | 5 seconds |
 | **help**         | Displays the help of commands or the help of a particular command        | help (command)                 | 5 seconds |
 | **invitations**  | Displays the number of people you have invited to the server!            | invitations (@member)          | 3 seconds |
-| **invite**       | Displays the links of Atlanta!                                           | invite (copy)                  | 5 seconds |
+| **invite**       | Displays the links of WaterLight!                                        | invite (copy)                  | 5 seconds |
 | **minecraft**    | Displays information about the Minecraft server!                         | minecraft [ip]                 | 3 seconds |
-| **partners**     | Displays Atlanta partners                                                | partners                       | 1 seconds |
+| **partners**     | Displays WaterLight partners                                             | partners                       | 1 seconds |
 | **permissions**  | Displays the member's permissions in the channel                         | permissions (@member)          | 1 seconds |
 | **ping**         | Displays bot latency                                                     | ping                           | 1 seconds |
 | **quote**        | Quote a message in the channel!                                          | quote [messageID] [channel]    | 5 seconds |
@@ -83,26 +82,6 @@ Here's the list of Atlanta commands. This one contains more than **110 commands*
 | **wanted**        | Generates a "wanted" image using the Améthyste API        | wanted (@member)           | 5 seconds |
 | **wasted**        | Generates a "wasted" image using the Améthyste API        | wasted (@member)           | 5 seconds |
 
-### Economy (15 commands)
-
-| Name             | Description                                                               | Usage                            | Cooldown   |
-| ---------------- | ------------------------------------------------------------------------- | -------------------------------- | ---------- |
-| **achievements** | Displays the list of all the achievements!                                | achievements                     | 1 seconds  |
-| **birthdate**    | Set your birthday date (which will appear on your profile)                | birthdate (date)                 | 1 seconds  |
-| **deposit**      | Deposit your money at the bank                                            | deposit [amount]                 | 1 seconds  |
-| **divorce**      | Divorce the person you are currently married to!                          | divorce                          | 3 seconds  |
-| **leaderboard**  | Displays users who have the most credits, levels or reputation points!    | leaderboard [rep/levels/credits] | 5 seconds  |
-| **money**        | Displays your credits                                                     | money (@member)                  | 1 seconds  |
-| **pay**          | Pay a member with credits!                                                | pay [@user#0000] [amount]        | 10 seconds |
-| **profile**      | Displays the profile of the mentioned user (or the author of the message) | profile (@user#0000)             | 3 seconds  |
-| **rep**          | Give a member a reputation point!                                         | rep [@user#0000]                 | 3 seconds  |
-| **rob**          | Try to rob a member!                                                      | rob [@membre] [amount]           | 1 seconds  |
-| **setbio**       |                                                                           |                                  | 5 seconds  |
-| **slots**        | An equivalent to the Casino!                                              | slots [amount]                   | 3 seconds  |
-| **wedding**      | Marry the person of your choice!                                          | wedding [@user#0000]             | 10 seconds |
-| **withdraw**     | Withdraw money!                                                           | withdraw [amount]                | 1 seconds  |
-| **work**         | Work and earn money!                                                      | work                             | 3 seconds  |
-
 ### Moderation (15 commands)
 
 | Name                | Description                                                                             | Usage                                                              | Cooldown  |
@@ -122,6 +101,26 @@ Here's the list of Atlanta commands. This one contains more than **110 commands*
 | **unban**           | Unban the user from the server!                                                         | unban [userID/user#0000]                                           | 3 seconds |
 | **unmute**          | Unmute the mentioned member!                                                            | unmute [@member]                                                   | 3 seconds |
 | **warn**            | Warn a member in private messages                                                       | warn [@member] [reason]                                            | 3 seconds |
+
+### Economy (15 commands)
+
+| Name             | Description                                                               | Usage                            | Cooldown   |
+| ---------------- | ------------------------------------------------------------------------- | -------------------------------- | ---------- |
+| **achievements** | Displays the list of all the achievements!                                | achievements                     | 1 seconds  |
+| **birthdate**    | Set your birthday date (which will appear on your profile)                | birthdate (date)                 | 1 seconds  |
+| **deposit**      | Deposit your money at the bank                                            | deposit [amount]                 | 1 seconds  |
+| **divorce**      | Divorce the person you are currently married to!                          | divorce                          | 3 seconds  |
+| **leaderboard**  | Displays users who have the most credits, levels or reputation points!    | leaderboard [rep/levels/credits] | 5 seconds  |
+| **money**        | Displays your credits                                                     | money (@member)                  | 1 seconds  |
+| **pay**          | Pay a member with credits!                                                | pay [@user#0000] [amount]        | 10 seconds |
+| **profile**      | Displays the profile of the mentioned user (or the author of the message) | profile (@user#0000)             | 3 seconds  |
+| **rep**          | Give a member a reputation point!                                         | rep [@user#0000]                 | 3 seconds  |
+| **rob**          | Try to rob a member!                                                      | rob [@membre] [amount]           | 1 seconds  |
+| **setbio**       |                                                                           |                                  | 5 seconds  |
+| **slots**        | An equivalent to the Casino!                                              | slots [amount]                   | 3 seconds  |
+| **wedding**      | Marry the person of your choice!                                          | wedding [@user#0000]             | 10 seconds |
+| **withdraw**     | Withdraw money!                                                           | withdraw [amount]                | 1 seconds  |
+| **work**         | Work and earn money!                                                      | work                             | 3 seconds  |
 
 ### Fun (11 commands)
 

@@ -6,7 +6,7 @@ router = express.Router();
 router.get("/:serverID", CheckAuth, async(req, res) => {
 
     // Check if the user has the permissions to edit this guild
-    let guild = req.client.guilds.get(req.params.serverID);
+    let guild = req.client.guilds.cache.get(req.params.serverID);
     if(!guild || !req.userInfos.displayedGuilds || !req.userInfos.displayedGuilds.find((g) => g.id === req.params.serverID)){
         return res.render("404", {
             user: req.userInfos,
@@ -31,7 +31,7 @@ router.get("/:serverID", CheckAuth, async(req, res) => {
 router.post("/:serverID", CheckAuth, async(req, res) => {
 
     // Check if the user has the permissions to edit this guild
-    let guild = req.client.guilds.get(req.params.serverID);
+    let guild = req.client.guilds.cache.get(req.params.serverID);
     if(!guild || !req.userInfos.displayedGuilds || !req.userInfos.displayedGuilds.find((g) => g.id === req.params.serverID)){
         return res.render("404", {
             user: req.userInfos,
@@ -60,7 +60,7 @@ router.post("/:serverID", CheckAuth, async(req, res) => {
         let welcome = {
             enabled: true,
             message: data.message,
-            channel: guild.channels.find((ch) => "#"+ch.name === data.channel).id,
+            channel: guild.channels.cache.find((ch) => "#"+ch.name === data.channel).id,
             withImage: data.withImage === "on"
         };
         guildData.plugins.welcome = welcome;
@@ -107,7 +107,7 @@ router.post("/:serverID", CheckAuth, async(req, res) => {
     if(data.hasOwnProperty("autoroleEnable") || data.hasOwnProperty("autoroleUpdate")){
         let autorole = {
             enabled: true,
-            role: guild.roles.find((r) => "@"+r.name === data.role).id
+            role: guild.roles.cache.find((r) => "@"+r.name === data.role).id
         };
         guildData.plugins.autorole = autorole;
         guildData.markModified("plugins.autorole");
@@ -128,17 +128,17 @@ router.post("/:serverID", CheckAuth, async(req, res) => {
         if(data.suggestions === req.language.get("UTILS").NO_CHANNEL){
             guildData.plugins.suggestions = false;
         } else {
-            guildData.plugins.suggestions = guild.channels.find((ch) => "#"+ch.name === data.suggestions).id;
+            guildData.plugins.suggestions = guild.channels.cache.find((ch) => "#"+ch.name === data.suggestions).id;
         }
         if(data.modlogs === req.language.get("UTILS").NO_CHANNEL){
             guildData.plugins.modlogs = false;
         } else {
-            guildData.plugins.modlogs = guild.channels.find((ch) => "#"+ch.name === data.modlogs).id;
+            guildData.plugins.modlogs = guild.channels.cache.find((ch) => "#"+ch.name === data.modlogs).id;
         }
         if(data.fortniteshop === req.language.get("UTILS").NO_CHANNEL){
             guildData.plugins.fortniteshop = false;
         } else {
-            guildData.plugins.fortniteshop = guild.channels.find((ch) => "#"+ch.name === data.fortniteshop).id;
+            guildData.plugins.fortniteshop = guild.channels.cache.find((ch) => "#"+ch.name === data.fortniteshop).id;
         }
         guildData.markModified("plugins");
     }

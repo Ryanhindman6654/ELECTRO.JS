@@ -13,7 +13,7 @@ module.exports = class {
 
         // Logs some informations using the logger file
         client.logger.log(`Loading a total of ${client.commands.size} command(s).`, "log");
-        client.logger.log(`${client.user.tag}, ready to serve ${client.users.size} users in ${client.guilds.size} servers.`, "ready");
+        client.logger.log(`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`, "ready");
 
         /* DiscordBots.org STATS */
         let discordbotsorg = require("../helpers/discordbots.org.js");

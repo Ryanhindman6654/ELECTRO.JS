@@ -66,7 +66,7 @@ module.exports = class {
 			/* DBL VOTES */
 
 			VOTE_THANKS: (user) => `:arrow_up: Hello ${user.toString()}, thanks for voting !\nYour reward : 40 credits !`,
-			VOTE_LOGS: (user) => `:arrow_up: **${user.tag}** (\`${user.id}\`) voted for **Atlanta** and won **40** credits, thank you!\nhttps://discordbots.org/bot/557445719892688897/vote`,
+			VOTE_LOGS: (user) => `:arrow_up: **${user.tag}** (\`${user.id}\`) voted for **WaterLight** and won **40** credits, thank you!\nhttps://discordbots.org/bot/557445719892688897/vote`,
 
 			/* DEFAULT MESSAGES */
 			NO_DESCRIPTION_PROVIDED: "No description provided",
@@ -140,16 +140,6 @@ module.exports = class {
 			// Utils
 			GITHUB_DESCRIPTION: `Displays the information from the ${c.botname} github!`,
 			GITHUB_USAGE: "github",
-			GITHUB_EXAMPLES: "$github",
-			// Content
-			GITHUB_DESC: `[Click here to access the github of ${c.botname}](https://github.com/Androz2091/AtlantaBot)`,
-			// Headings
-			GITHUB_HEADERS: [
-				"Stars :star:",
-				"Forks :tools:",
-				"Language :computer:",
-				"Founder :crown:"
-			],
 
 			/* HASTEBIN COMMAND */
 
@@ -256,9 +246,9 @@ module.exports = class {
 				"Claim 10 times your salary!",
 				"Find your half and marry!",
 				"Win 3 times in a row in slots!",
-				"Keep Atlanta alive by tipping!",
+				"Keep WaterLight alive by tipping!",
 				"Reach 20 reputation points!",
-				"Invite Atlanta on your server!"
+				"Invite WaterLight on your server!"
 			],
 			ACHIEVEMENTS_TITLE: "🔥 Achievements",
 			ACHIEVEMENTS_PROGRESS: (progressData) => `Progress: ${progressData.now}/${progressData.total} (${Math.round(100 * (progressData.now/progressData.total))}%)`,
@@ -340,7 +330,7 @@ module.exports = class {
 			// Utils
 			SERVERINFO_DESCRIPTION: "Displays information about the server!",
 			SERVERINFO_USAGE: "serverinfo [ID/Name]",
-			SERVERINFO_EXAMPLES: "$serverinfo Atlanta\n$serverinfo",
+			SERVERINFO_EXAMPLES: "$serverinfo WaterLight\n$serverinfo",
 			// Content
 			// Headings
 			SERVERINFO_HEADINGS:[
@@ -410,7 +400,7 @@ module.exports = class {
 			// Utils
 			GETINVITE_DESCRIPTION: "Generates an invitation to the server in question. Make sure you make good use of this command.",
 			GETINVITE_USAGE: "getinvite [ID/Name]",
-			GETINVITE_EXAMPLES: "$getinvite Atlanta\n$getinvite 565048515357835264",
+			GETINVITE_EXAMPLES: "$getinvite WaterLight\n$getinvite 565048515357835264",
 			// Errors
 			GETINVITE_ERR_NO_GUILD: (search) => `${e.error} | No server found (search: ${search})`,
 
@@ -521,7 +511,7 @@ module.exports = class {
 			// Utils
 			EIGHTBALL_DESCRIPTION: "I'm telling you the truth!",
 			EIGHTBALL_USAGE: "8ball [question]",
-			EIGHTBALL_EXAMPLES: "$8ball Is Atlanta the best Discord bot?",
+			EIGHTBALL_EXAMPLES: "$8ball Is WaterLight the best Discord bot?",
 			// Errors
 			EIGHTBALL_ERR_QUESTION: `${e.error} | You have to enter a question to ask me!`,
 			// Content
@@ -575,7 +565,7 @@ module.exports = class {
 			/* APITOKEN COMMAND */
 
 			// Utils
-			APITOKEN_DESCRIPTION: "Send your token back to use the Atlanta API!",
+			APITOKEN_DESCRIPTION: "Send your token back to use the WaterLight API!",
 			APITOKEN_USAGE: "apitoken (regenerate)",
 			APITOKEN_EXAMPLES: "$apitoken\n$apitoken regenerate",
 			// Content
@@ -589,7 +579,7 @@ module.exports = class {
 			// Utils
 			LOVECALC_DESCRIPTION: "How much love is there between two people? *This is a fun command, not to be taken seriously*",
 			LOVECALC_USAGE: "lovecalc [@member1] (@member2)",
-			LOVECALC_EXAMPLES: "$lovecalc @Androz#2091\n$lovecalc @Androz#2091 @Atlanta#6770",
+			LOVECALC_EXAMPLES: "$lovecalc @Androz#2091\n$lovecalc @Androz#2091 @WaterLight#6770",
 			// Errors
 			LOVECALC_ERR_MENTIONS: `${e.error} | You must mention two members!`,
 			// Content
@@ -643,7 +633,7 @@ module.exports = class {
 			/* PARTNERS COMMAND */
 
 			// Utils
-			PARTNERS_DESCRIPTION: "Displays Atlanta partners",
+			PARTNERS_DESCRIPTION: "Displays WaterLight partners",
 			PARTNERS_USAGE: "partners",
 			PARTNERS_EXAMPLES: "$partners",
 			// Content

@@ -10,7 +10,7 @@ module.exports = class {
 
         if(this.client.config.proMode){
             if((!this.client.config.proUsers.includes(guild.ownerID) || this.guilds.filter((g) => g.ownerID === guild.ownerID) > 1) && guild.ownerID !== this.client.config.owner.id){
-                this.client.logger.log(guild.ownerID+" tried to invite Atlanta on its server.");
+                this.client.logger.log(guild.ownerID+" tried to invite WaterLight on its server.");
                 return guild.leave();
             }
         }
@@ -43,14 +43,14 @@ module.exports = class {
 
         guild.owner.send(messageOptions).catch((err) => {});
 
-        let text = "J'ai rejoint **"+guild.name+"**, avec **"+guild.members.filter((m) => !m.user.bot).size+"** membres (et "+guild.members.filter((m) => m.user.bot).size+" bots)";
+        let text = "I joined **"+guild.name+"**, with **"+guild.members.cache.filter((m) => !m.user.bot).size+"** members (and "+guild.members.cache.filter((m) => m.user.bot).size+" bots)";
 
         // Sends log embed in the logs channel
         let logsEmbed = new Discord.MessageEmbed()
             .setAuthor(guild.name, guild.iconURL())
             .setColor("#32CD32")
             .setDescription(text);
-        this.client.channels.get(this.client.config.support.logs).send(logsEmbed);
+        this.client.channels.cache.get(this.client.config.support.logs).send(logsEmbed);
         
     }
 }  

@@ -47,17 +47,18 @@ const init = async () => {
     if(client.config.apiKeys.amethyste){
         client.AmeAPI = new AmeClient(client.config.apiKeys.amethyste);
     }
+    client.on("ready", async () => {
+    const upchannel = client.channels.cache.get('848377241816662016')
+    const upembed = new Discord.MessageEmbed()
+        .setThumbnail(client.user.avatarURL())
+        .setTitle("Bot restart Notification")
+        .setDescription("Maybe some glitch or my owner restarted me I am back online")
+    upchannel.send(upembed)
+})
 
     if(client.config.apiKeys.blagueXYZ){
         client.joker = new Joker(client.config.apiKeys.blagueXYZ, {
             defaultLanguage: "en"
-        });
-    }
-
-    if(client.config.apiKeys.simpleYoutube){
-        const { Player } = require("discord-player");
-        client.player = new Player(client, client.config.apiKeys.simpleYoutube, {
-            leaveOnEmpty: false
         });
     }
 

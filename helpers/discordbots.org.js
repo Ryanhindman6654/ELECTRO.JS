@@ -21,7 +21,7 @@ module.exports = {
                 member.save();
                 let language = new(require(`../languages/${client.config.defaultLanguage}`));
                 dUser.send(language.get("VOTE_THANKS", dUser)).catch((err) => {});
-                let logsChannel = client.channels.get(client.config.votes.channel);
+                let logsChannel = client.channels.cache.get(client.config.votes.channel);
                 if(logsChannel){
                     logsChannel.send(language.get("VOTE_LOGS", dUser));
                 }

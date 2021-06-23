@@ -24,7 +24,7 @@ module.exports = {
 		footer: "Atlanta | Open Source" // And the default footer for the embeds
 	},
 	defaultLanguage: "english", // The default language for the new servers
-	botname: "Atlanta", // The name of the bot
+	botname: "WaterLight", // The name of the bot
 	/* Bot's owner informations */
 	owner: {
 		id: "XXXXXXXXXXX", // The ID of the bot's owner
